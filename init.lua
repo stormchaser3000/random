@@ -5,7 +5,6 @@
 minetest.register_node("random:wood",{
 	descrption = "chest",
 	groups = {oddly_breakable_by_hand=2, choppy=1},
-	sounds = default.node_sound_wood_defaults(),
 	tiles = {"default_chest_top.png", "default_chest_top.png", "default_chest_side.png",
 		"default_chest_side.png", "default_chest_side.png", "default_chest_front.png"},
 	drawtype="nodebox",
@@ -42,6 +41,7 @@ minetest.register_node("random:wood",{
 		minetest.log("action", player:get_player_name()..
 				" takes stuff from chest at "..minetest.pos_to_string(pos))
 	end,
+	}
 })
 
 minetest.register_node("random:fence_post",{
