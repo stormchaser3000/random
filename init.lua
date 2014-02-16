@@ -15,6 +15,7 @@ minetest.register_node("random:wood",{
 		type = "fixed",
 		fixed = {
 			{-0.4375,-0.5,-0.4375,0.440288,0.375,0.423275}, --NodeBox1
+	},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	on_construct = function(pos)
